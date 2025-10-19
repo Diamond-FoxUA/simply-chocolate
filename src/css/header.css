@@ -1,0 +1,36 @@
+.logo {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.logo-accent {
+  font-style: italic;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu-open {
+  stroke: var(--black);
+
+  background-color: transparent;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.nav-list,
+.address,
+.mobile-menu {
+  display: none;
+}
