@@ -2,7 +2,7 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  
+
   display: flex;
   align-items: center;
   gap: 4px;
@@ -33,4 +33,55 @@
 .address,
 .mobile-menu {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding: 28px 0;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .nav-menu-open {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 24px;
+
+    margin-left: auto;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    padding: 28px 0;
+  }
+
+  .address {
+    display: block;
+    margin-left: 48px;
+  }
+
+  .address-list {
+    display: flex;
+    gap: 18px;
+  }
+
+  .address-link {
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+
+    fill: none;
+    stroke: var(--black);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-left: 90px;
+  }
 }
