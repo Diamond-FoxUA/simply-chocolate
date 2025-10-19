@@ -3,7 +3,6 @@
   font-size: 14px;
   line-height: 129%;
   font-weight: 400;
-  text-transform: capitalize;
 
   /* colors */
 
@@ -46,6 +45,10 @@
   color: var(--orange);
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .main-heading {
     line-height: 121%;
@@ -55,4 +58,16 @@
     font-size: 24px;
     line-height: 117%;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap; /* Adds extra class for focus handling */
+  border: 0;
 }
