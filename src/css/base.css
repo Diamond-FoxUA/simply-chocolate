@@ -3,6 +3,7 @@
   font-size: 14px;
   line-height: 129%;
   font-weight: 400;
+  text-transform: capitalize;
 
   /* colors */
 
@@ -21,7 +22,37 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.main-heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
 .section-heading {
   font-size: 20px;
   font-weight: 600;
+  line-height: 120%;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.text-accent {
+  color: var(--orange);
+}
+
+@media screen and (min-width: 768px) {
+  .main-heading {
+    line-height: 121%;
+  }
+
+  .section-heading {
+    font-size: 24px;
+    line-height: 117%;
+  }
 }
