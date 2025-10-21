@@ -10,8 +10,15 @@
   padding-bottom: 14px;
 }
 
+.logo:hover .logo-accent,
+.logo:focus .logo-accent {
+  color: var(--orange);
+}
+
 .logo-accent {
   font-style: italic;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav {
@@ -70,7 +77,8 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-menu-close:hover {
+.nav-menu-close:hover,
+.nav-menu-close:focus {
   transform: scale(1.1);
 }
 
@@ -88,7 +96,8 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-nav-link:hover {
+.mobile-menu-nav-link:hover,
+.mobile-menu-nav-link:focus {
   color: var(--orange);
 }
 
@@ -112,7 +121,8 @@
   stroke: var(--white);
 }
 
-.mobile-menu-address-link:hover {
+.mobile-menu-address-link:hover,
+.mobile-menu-address-link:focus {
   stroke: var(--orange);
 }
 
@@ -143,7 +153,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .nav-link:hover {
+  .nav-link:hover,
+  .nav-link:focus {
     color: var(--orange);
   }
 
@@ -168,7 +179,8 @@
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .address-link:hover {
+  .address-link:hover,
+  .address-link:focus {
     stroke: var(--orange);
   }
 }
