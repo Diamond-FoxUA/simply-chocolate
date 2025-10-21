@@ -27,6 +27,7 @@
 
   color: var(--white);
 
+  max-width: 295px;
   margin-bottom: 32px;
 }
 
@@ -52,6 +53,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .main-heading {
+    font-size: 28px;
+    max-width: 484px;
+  }
+
   .section-heading {
     font-size: 24px;
   }
