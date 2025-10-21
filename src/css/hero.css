@@ -44,7 +44,8 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-buy:hover {
+.btn-buy:hover,
+.btn-buy:focus {
   color: var(--orange);
   background-color: var(--cream);
 }
@@ -67,7 +68,8 @@
     border-color 250ms cubic-bezier(0, 4, 0, 0.2, 1);
 }
 
-.btn-link:hover {
+.btn-link:hover,
+.btn-link:focus {
   color: var(--orange);
   border-color: var(--orange);
 }
@@ -79,11 +81,13 @@
   width: 110px;
 }
 
-.scroll-down-link:hover .scroll-down-text {
+.scroll-down-link:hover .scroll-down-text,
+.scroll-down-link:focus .scroll-down-text {
   color: var(--orange);
 }
 
-.scroll-down-link:hover .btn-scroll-down {
+.scroll-down-link:hover .btn-scroll-down,
+.scroll-down-link:focus .btn-scroll-down {
   fill: var(--white);
   background-color: var(--orange);
 }
