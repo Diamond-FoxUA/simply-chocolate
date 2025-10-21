@@ -39,3 +39,50 @@
 .benefits-text {
   color: rgba(255, 255, 255, 0.7);
 }
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding: 50px 0;
+  }
+
+  .benefits-card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .benefits-card-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits .container {
+    padding: 0 50px;
+  }
+
+  .benefits-card-list {
+    gap: 70px;
+    margin-bottom: 0;
+  }
+
+  .benefits-card-item {
+    position: relative;
+    width: calc((100% - (70px * 2)) / 3);
+  }
+
+  .benefits-card-item:not(:last-child)::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0px;
+
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    transform: translateY(-50%);
+  }
+}
