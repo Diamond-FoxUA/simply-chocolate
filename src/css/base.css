@@ -8,7 +8,8 @@
 	--black: #111;
 	--orange: #fd9222;
 	--violet: #1e1823;
-	--white: #fff;
+  --cream: #fcf1e0;
+	--white: #fafafa;
 
   color: var(--black);
   background-color: var(--white);
@@ -23,6 +24,11 @@
 .main-heading {
   font-size: 20px;
   font-weight: 500;
+
+  color: var(--white);
+
+  max-width: 295px;
+  margin-bottom: 32px;
 }
 
 .section-heading {
@@ -47,6 +53,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .main-heading {
+    font-size: 28px;
+    max-width: 484px;
+  }
+
   .section-heading {
     font-size: 24px;
   }
