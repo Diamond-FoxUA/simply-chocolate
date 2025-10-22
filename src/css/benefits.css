@@ -43,6 +43,7 @@
 @media screen and (min-width: 768px) {
   .benefits {
     padding: 50px 0;
+    margin: 40px 0;
   }
 
   .benefits-card-list {
@@ -58,6 +59,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .benefits {
+    margin: 72px 0 50px 0;
+  }
+
   .benefits .container {
     padding: 0 50px;
   }
