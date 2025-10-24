@@ -1,7 +1,63 @@
 <section class="feedbacks" id="feedbacks">
   <div class="container">
-    <h2 class="section-heading">chocolate is loved</h2>
-    <!-- .feedbacks-swiper -->
+    <h2 class="section-heading">
+      <span class="text-accent">chocolate</span> is loved
+    </h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img
+            class="feedbacks-profile-pic"
+            src="./img/profile-pics/profile-1.png"
+            alt="profile picture"
+          />
+          <h3 class="sub-heading">Victoria Dobrzhanska</h3>
+          <p class="feedbacks-text">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="feedbacks-profile-pic"
+            src="./img/profile-pics/profile-2.jpg"
+            alt="profile picture"
+          />
+          <h3 class="sub-heading">Nazar Babenko</h3>
+          <p class="feedbacks-text">
+            This chocolate confection is a delight! A delight! The wafer is
+            light and crisp, the hazelnut cream is smooth, and the chocolate is
+            good.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="feedbacks-profile-pic"
+            src="./img/profile-pics/profile-3.jpg"
+            alt="profile picture"
+          />
+          <h3 class="sub-heading">Olena Kampusch</h3>
+          <p class="feedbacks-text">
+            Chocolate is a family favourite treat. Love the delicious smooth
+            chocolate and the creaminess inside. The wafer is soft but crunchy.
+          </p>
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
   </div>
   <button>Leave a review</button>
+  <script type="module" src="./js/swiper.js"></script>
 </section>
