@@ -3,29 +3,63 @@
     <h3 class="section-heading">
       hOW IT’S <span class="text-accent">made?</span>
     </h3>
-    <picture class="made-picture"></picture>
-    <h4 class="made-list-heading">
-      Try our chocolates today and discover the perfect balance of flavor
-    </h4>
-    <ul class="made-list">
-      <li class="made-list-item">
-        Heat the milk in a saucepan without bringing it to a boil. Add sugar and
-        cocoa powder.
-      </li>
-      <li class="made-list-item">
-        At the same time, prepare a water bath. Melt the butter on it.
-      </li>
-      <li class="made-list-item">
-        "Mix" the milk mixture and already liquid butter. Mix thoroughly with a
-        silicone spatula so that the mass becomes uniform and silky.
-      </li>
-      <li class="made-list-item">
-        Heat the mixture over low heat, letting it barely boil.
-      </li>
-      <li class="made-list-item">
-        Pour the chocolate into special containers (can be replaced with ice
-        molds). Allow to cool and harden.
-      </li>
-    </ul>
+    <div class="made-card">
+      <picture class="made-picture">
+        <source
+          srcset="
+            ./img/desktop/made-desk-min.png    1x,
+            ./img/desktop/made-desk@2x-min.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./img/tab-mob/made-tab-min.png    1x,
+            ./img/tab-mob/made-tab@2x-min.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./img/tab-mob/made-mob-min.png    1x,
+            ./img/tab-mob/made-mob@2x-min.png 2x
+          "
+          media="(max-width: 375px)"
+          type="image/png"
+        />
+        <img
+          сlass="made-image"
+          src="./img/tab-mob/made-mob-min.png"
+          alt="A hand holds a whisk dripping melted chocolate into a metal bowl covered with a gray cloth"
+        />
+      </picture>
+      <div class="made-recipe">
+        <h4 class="made-list-heading">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h4>
+        <ul class="made-list">
+          <li class="made-list-item">
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar and
+            cocoa powder.
+          </li>
+          <li class="made-list-item">
+            At the same time, prepare a water bath. Melt the butter on it.
+          </li>
+          <li class="made-list-item">
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly with a
+            silicone spatula so that the mass becomes uniform and silky.
+          </li>
+          <li class="made-list-item">
+            Heat the mixture over low heat, letting it barely boil.
+          </li>
+          <li class="made-list-item">
+            Pour the chocolate into special containers (can be replaced with ice
+            molds). Allow to cool and harden.
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
