@@ -1,24 +1,14 @@
 .feedbacks {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
-.feedbacks .section-heading {
+/* .feedbacks .section-heading {
   margin-bottom: 74px;
-}
-
-.feedbacks .swiper-slide {
-  position: relative;
-  text-align: center;
-  background-color: #fff;
-
-  padding: 56px 18px 42px 18px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 15px;
-}
+} */
 
 .feedbacks-profile-pic {
   position: absolute;
-  top: -50%;
+  top: -40%;
   left: 50%;
 
   width: 80px;
@@ -35,4 +25,124 @@
 
 .feedbacks-text {
   opacity: 0.7;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+  /* overflow зазвичай обмежується Swiper, але можна змінювати для кастомних ефектів */
+}
+
+.swiper-slide {
+  flex-shrink: 0; /* важливо, щоб слайди не стискались */
+  width: 100%; /* можна регулювати ширину */
+  margin-right: 20px; /* відстань між слайдами */
+  border-radius: 15px;
+  background-color: #eee;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+
+  padding: 56px 18px 42px 18px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.swiper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  margin-top: 28px;
+}
+
+.swiper-pagination {
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullets {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: rgba(17, 17, 17, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    width 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--orange);
+  width: 28px;
+  border-radius: 1em;
+}
+
+.btn-review {
+  display: block;
+  margin: 32px auto 0 auto;
+
+  font-weight: 600;
+  color: var(--black);
+  background-color: transparent;
+
+  padding: 12px 28px;
+  border: 1px solid var(--orange);
+  border-radius: 100px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-review:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+@media screen and (min-width: 768px) {
+  .feedbacks {
+    padding: 40px 0;
+  }
+
+  .swiper {
+    margin-top: 26px;
+  }
+
+  .swiper-pagination {
+    margin-top: 32px;
+  }
+
+  .btn-review {
+    margin-top: 50px;
+    padding: 14px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feedbacks {
+    padding: 50px 0;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
 }
