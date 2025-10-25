@@ -1,9 +1,5 @@
 import Swiper from "swiper";
 import {Autoplay, Navigation, Keyboard, Pagination } from "swiper/modules";
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import '../css/styles.css';
 
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination, Keyboard, Autoplay],
@@ -23,7 +19,8 @@ const swiper = new Swiper('.swiper', {
     },
     1200: {
       slidesPerView: 3,
-      spaceBetween: 28
+      spaceBetween: 28,
+      loop: false
     }
   },
   pagination: {
