@@ -5,11 +5,11 @@
 
   /* colors */
 
-	--black: #111;
-	--orange: #fd9222;
-	--violet: #1e1823;
+  --black: #111;
+  --orange: #fd9222;
+  --violet: #1e1823;
   --cream: #fcf1e0;
-	--white: #fafafa;
+  --white: #fafafa;
 
   color: var(--black);
   background-color: var(--white);
@@ -80,6 +80,6 @@ body.modal-open {
   margin: -1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  white-space: nowrap; /* Adds extra class for focus handling */
+  white-space: nowrap;
   border: 0;
 }
