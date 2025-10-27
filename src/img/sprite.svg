@@ -26,6 +26,9 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M5.333 5.333h21.333c1.467 0 2.667 1.2 2.667 2.667v16c0 1.467-1.2 2.667-2.667 2.667H5.333A2.675 2.675 0 0 1 2.666 24V8c0-1.467 1.2-2.667 2.667-2.667z"/>
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M29.333 8 16 17.333 2.667 8"/>
     </symbol>
+    <symbol id="icon-close">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="73.143" d="M725.328 298.67 298.66 725.336m.001-426.666 426.668 426.666"/>ƒ
+    </symbol>
     <symbol id="icon-menu" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M4 16h24M4 8h24M4 24h24"/>
     </symbol>

@@ -1,0 +1,93 @@
+.made {
+  padding: 30px 0;
+}
+
+.made .section-heading {
+  margin-bottom: 32px;
+}
+
+.made-image {
+  width: 335px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.made-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.made-recipe {
+  background-color: #fff;
+  padding: 20px 14px;
+  border-radius: 15px;
+}
+
+.made-list-heading {
+  font-size: 18px;
+  font-weight: 600;
+
+  max-width: 307px;
+  margin-bottom: 20px;
+}
+
+.made-list-item {
+  position: relative;
+  margin-bottom: 18px;
+  margin-left: 16px;
+}
+
+.made-list-item::before {
+  content: "";
+  position: absolute;
+
+  top: 5px;
+  left: -15px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #eceded;
+  border-radius: 100%;
+
+  background-color: #4c4c4c;
+}
+
+@media screen and (min-width: 768px) {
+  .made {
+    padding: 40px 0;
+  }
+
+  .made .section-heading {
+    margin-bottom: 50px;
+  }
+
+  .made-recipe {
+    padding: 32px;
+  }
+
+  .made-list-heading {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made {
+    padding: 50px 0;
+  }
+
+  .made-card {
+    flex-direction: row;
+  }
+  
+  .made-image,
+  .made-picture {
+    flex-shrink: 0;
+  }
+
+  .made-list-item {
+    margin-bottom: 24px;
+  }
+}
