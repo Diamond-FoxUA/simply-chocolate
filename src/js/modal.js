@@ -1,17 +1,12 @@
 const reviewBtnEl = document.querySelector('[data-modal-open]');
-const backdropEl = document.querySelector('.backdrop');
-const modalEl = document.querySelector('[data-modal]');
-const bodyEl = document.querySelector('body');
+const backdropEl = document.querySelector('[data-modal]');
+const bodyEl = document.body;
 
 const modalMarkup = `
   <div class="modal-container">
-    <button class="modal-close-btn" data-modal-close>
-      <svg class="modal-close-btn-icon" width="28" height="28">
-        <use href="/img/sprite.svg#icon-menu"></use>
-      </svg>
-    </button>
+    <button class="modal-close-btn" data-modal-close></button>
     <h2 class="modal-heading">
-      leave a review about <span class="text-accent">our chocolate</span>
+      Leave a review about <span class="text-accent">our chocolate</span>
     </h2>
 
     <form class="modal-form">
@@ -24,15 +19,17 @@ const modalMarkup = `
           </svg>
         </div>
       </div>
+
       <div class="modal-form-item">
         <label class="modal-form-label" for="user-email">Email</label>
-          <div class="form-input-container">
-            <input class="modal-form-input" type="email" id="user-email" required />
-            <svg class="form-input-icon" width="17" height="17">
-              <use href="/img/sprite.svg#icon-mail"></use>
-            </svg>
-          </div>
+        <div class="form-input-container">
+          <input class="modal-form-input" type="email" id="user-email" required />
+          <svg class="form-input-icon" width="17" height="17">
+            <use href="/img/sprite.svg#icon-mail"></use>
+          </svg>
+        </div>
       </div>
+
       <div class="modal-form-item">
         <label class="modal-form-label" for="user-phone">Phone number</label>
         <div class="form-input-container">
@@ -42,6 +39,7 @@ const modalMarkup = `
           </svg>
         </div>
       </div>
+
       <div class="modal-form-item">
         <label class="modal-form-label" for="user-message">Comment</label>
         <textarea 
@@ -51,6 +49,7 @@ const modalMarkup = `
           placeholder="Enter text"
         ></textarea>
       </div>
+
       <div class="modal-form-item form-item-checkbox">
         <input class="hidden-checkbox visually-hidden" type="checkbox" value="true" name="user-privacy" id="user-privacy" required>
         <label class="modal-form-label-privacy" for="user-privacy">
@@ -59,27 +58,38 @@ const modalMarkup = `
               <use href="/img/sprite.svg#icon-check"></use>
             </svg>
           </span>
-          <span class="checkbox-text">I accept the terms and conditions of the <a href="" class="checkbox-link">Privacy Policy</a></span>
+          <span class="checkbox-text">
+            I accept the terms and conditions of the 
+            <a href="#" class="checkbox-link">Privacy Policy</a>
+          </span>
         </label>
       </div>
+
       <button class="modal-form-btn" type="submit">Send</button>
     </form>
-  </div>`
+  </div>
+`;
 
-modalEl.insertAdjacentHTML('beforeend', modalMarkup);
+backdropEl.insertAdjacentHTML('beforeend', modalMarkup);
 
-const modalCloseBtnEl = document.querySelector('[data-modal-close]');
+const modalCloseBtnEl = backdropEl.querySelector('[data-modal-close]');
 
 reviewBtnEl.addEventListener('click', toggleModal);
 modalCloseBtnEl.addEventListener('click', toggleModal);
+backdropEl.addEventListener('click', onBackdropClick);
+window.addEventListener('keydown', onEscPress);
 
 function toggleModal() {
   backdropEl.classList.toggle('hidden');
-  if(backdropEl.classList.contains('hidden')) {
-    bodyEl.classList.remove('modal-open');
-    return;
-  }
-  bodyEl.classList.add('modal-open');
+  bodyEl.classList.toggle('modal-open');
 }
 
+function onBackdropClick(e) {
+  if (e.target === backdropEl) toggleModal();
+}
 
+function onEscPress(e) {
+  if (e.key === 'Escape' && !backdropEl.classList.contains('hidden')) {
+    toggleModal();
+  }
+}
