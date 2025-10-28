@@ -2,6 +2,8 @@ const reviewBtnEl = document.querySelector('[data-modal-open]');
 const backdropEl = document.querySelector('[data-modal]');
 const bodyEl = document.body;
 
+const iconPath = new URL('/img/sprite.svg', import.meta.url).href;
+
 const modalMarkup = `
   <div class="modal-container">
     <button class="modal-close-btn" data-modal-close></button>
@@ -15,7 +17,7 @@ const modalMarkup = `
         <div class="form-input-container">
           <input class="modal-form-input" type="text" id="user-name" required />
           <svg class="form-input-icon" width="17" height="17">
-            <use href="/img/sprite.svg#icon-user"></use>
+            <use href="${iconPath}#icon-user"></use>
           </svg>
         </div>
       </div>
@@ -25,7 +27,7 @@ const modalMarkup = `
         <div class="form-input-container">
           <input class="modal-form-input" type="email" id="user-email" required />
           <svg class="form-input-icon" width="17" height="17">
-            <use href="/img/sprite.svg#icon-mail"></use>
+            <use href="${iconPath}#icon-mail"></use>
           </svg>
         </div>
       </div>
@@ -35,7 +37,7 @@ const modalMarkup = `
         <div class="form-input-container">
           <input class="modal-form-input" type="tel" id="user-phone" required />
           <svg class="form-input-icon" width="17" height="17">
-            <use href="/img/sprite.svg#icon-phone"></use>
+            <use href="${iconPath}#icon-phone"></use>
           </svg>
         </div>
       </div>
@@ -55,7 +57,7 @@ const modalMarkup = `
         <label class="modal-form-label-privacy" for="user-privacy">
           <span class="checkbox">
             <svg class="checkbox-icon" width="10" height="10">
-              <use href="/img/sprite.svg#icon-check"></use>
+              <use href="${iconPath}#icon-check"></use>
             </svg>
           </span>
           <span class="checkbox-text">
