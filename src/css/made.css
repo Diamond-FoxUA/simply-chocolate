@@ -7,7 +7,7 @@
 }
 
 .made-image {
-  width: 335px;
+  max-width: 335px;
   height: 500px;
   border-radius: 15px;
 }
@@ -71,6 +71,15 @@
     max-width: 350px;
     margin-bottom: 28px;
   }
+
+  .made-card {
+    max-width: 614px;
+    margin: 0 auto;
+  }
+
+  .made-image {
+    max-width: 614px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -82,9 +91,14 @@
     flex-direction: row;
   }
   
-  .made-image,
-  .made-picture {
+  .made-image {
+    max-width: 600px;
+    height: 400px;
     flex-shrink: 0;
+  }
+
+  .made-card {
+    max-width: 100%;
   }
 
   .made-list-item {
