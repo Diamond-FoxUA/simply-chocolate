@@ -26,97 +26,111 @@
 
 .taste-card-item {
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 15px;
   padding: 28px;
-  background-color: rgba(255, 255, 255, 0.98);
-  background-clip: padding-box;
+  width: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+
+  overflow: hidden;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.taste-card-image {
-  width: 224px;
+.taste-card-item:nth-child(1) {
+  order: 1;
 }
 
-.taste-card-text {
-  font-weight: 600;
-  color: var(--white);
-  text-transform: uppercase;
-  align-self: start;
+.taste-card-item:nth-child(2) {
+  order:2
 }
 
-.taste-card-item:nth-child(even) {
-  background-color: #fff;
-  border: 1px solid var(--orange);
+.taste-card-item:nth-child(3) {
+  order: 3;
 }
 
-.taste-card-item:nth-child(even) .taste-card-text {
-  color: var(--black);
+.taste-card-item:nth-child(4) {
+  order: 4;
+}
+
+.taste-card-item:hover .overlay-content {
+  opacity: 1;
 }
 
 .taste-card-item:nth-child(odd) {
   background-color: var(--black);
 }
 
+.taste-card-item:nth-child(even) {
+  color: var(--black);
+  border-color: var(--orange);
+}
+
 .taste-card-item:first-child {
   background-color: var(--orange);
 }
 
-.taste-card-overlay {
+.taste-card-image {
+  width: 224px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.taste-card-text {
+  font-weight: 600;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.taste-card-item:nth-child(odd) .taste-card-text {
+  color: var(--white);
+}
+
+.taste-card-item:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.overlay-content {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  padding: 28px;
 
+  padding: 28px;
   width: 100%;
   height: 100%;
-  border: 1px solid var(--orange);
   border-radius: inherit;
-
   background-color: var(--white);
 
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.taste-card-item:hover .taste-card-overlay {
-  transform: translateY(0);
-}
-
-.taste-card-overlay .sub-heading {
+.overlay-content .sub-heading {
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
-.taste-card-overlay-tags {
-  margin-bottom: 14px;
+.tag-accent,
+.tag-transparent {
+  font-size: 10px;
+  
+  padding: 6px 16px;
+  border: 1px solid transparent;
+  border-radius: 35px;
 }
 
-.taste-card-overlay .tag-accent {
-  font-size: 10px;
+.tag-accent {
   color: var(--white);
-
-  padding: 6px 16px;
-  margin-right: 6px;
   background-color: var(--orange);
-
-  border: none;
-  border-radius: 35px;
+  margin-right: 6px;
 }
 
-.taste-card-overlay .tag-transparent {
-  font-size: 10px;
-  padding: 6px 16px;
+.tag-transparent {
   border: 1px solid var(--orange);
-  border-radius: 35px;
+}
+
+.overlay-text {
+  margin-top: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -134,12 +148,28 @@
   }
 
   .taste-card-list {
-    margin-top: 50px;
-    gap: 32px;
+    gap: 33px;
   }
 
   .taste-card-item {
-    width: calc((100% - (32px * 2)) / 2);
+    width: calc((100% - 33px) / 2);
+  }
+
+  
+  .taste-card-item:nth-child(1){
+    order: 1;
+  }
+
+  .taste-card-item:nth-child(2){
+    order: 3;
+  }
+
+  .taste-card-item:nth-child(3){
+    order: 4;
+  }
+
+  .taste-card-item:nth-child(4){
+    order: 2;
   }
 }
 
@@ -156,7 +186,23 @@
     width: calc((100% - (19px * 3)) / 4);
   }
 
-  /* .taste-card-overlay {
+  .taste-card-item:nth-child(1){
+    order: 1;
+  }
+
+  .taste-card-item:nth-child(2){
+    order: 2;
+  }
+
+  .taste-card-item:nth-child(3){
+    order: 3;
+  }
+
+  .taste-card-item:nth-child(4){
+    order: 4;
+  }
+
+  .overlay-content {
     padding: 20px;
-  } */
+  }
 }
