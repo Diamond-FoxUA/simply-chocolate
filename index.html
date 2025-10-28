@@ -16,8 +16,9 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/simple-chocolate/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/simple-chocolate/assets/vendor-CXw4zOXi.js">
-    <link rel="stylesheet" crossorigin href="/simple-chocolate/assets/index-DpIXWTM6.css">
+    <link rel="modulepreload" crossorigin href="/simple-chocolate/assets/vendor-BbOGx51x.js">
+    <link rel="stylesheet" crossorigin href="/simple-chocolate/assets/vendor-DnveWo0P.css">
+    <link rel="stylesheet" crossorigin href="/simple-chocolate/assets/index-BtUxF8hI.css">
   </head>
   <body>
     <header class="header">
@@ -38,7 +39,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#feedbacks">Chocolate is loved</a>
-        </li>
         </li>
       </ul>
       <address class="address">
@@ -79,10 +79,10 @@
             <li class="mobile-menu-nav-item">
               <a class="mobile-menu-nav-link" href="#">Home</a>
             </li>
-            <li class="mobile-menu-nav-item"></li>
+            <li class="mobile-menu-nav-item">
               <a class="mobile-menu-nav-link" href="#made">How it’s made?</a>
             </li>
-            <li class="mobile-menu-nav-item"></li>
+            <li class="mobile-menu-nav-item">
               <a class="mobile-menu-nav-link" href="#feedbacks">Chocolate is loved</a>
             </li>
           </ul>
@@ -190,31 +190,33 @@
     </p>
     <ul class="taste-card-list">
       <li class="taste-card-item">
-        <picture class="taste-card-picture">
-          <source
-            srcset="/simple-chocolate/assets/chocolate-desk-min-DAgBL__N.png 1x, /simple-chocolate/assets/chocolate-desk@2x-min-CBpAoAJs.png 2x"
-            media="(min-width: 1200px)"
-            type="image/png"
-          />
-          <source
-            srcset="/simple-chocolate/assets/chocolate-mob-min-0ace6Qp7.png 1x, /simple-chocolate/assets/chocolate-mob@2x-min-BHpOKDUj.png 2x"
-            type="image/png"
-          />
-          <img
-            class="taste-card-image"
-            src="/simple-chocolate/assets/chocolate-mob-min-0ace6Qp7.png"
-            alt="milk chocolate"
-          />
-        </picture>
-        <p class="taste-card-text">mILK CHOCOLATE</p>
+        <div class="overlay">
+          <picture class="taste-card-picture">
+            <source
+              srcset="/simple-chocolate/assets/chocolate-desk-min-DAgBL__N.png 1x, /simple-chocolate/assets/chocolate-desk@2x-min-CBpAoAJs.png 2x"
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="/simple-chocolate/assets/chocolate-mob-min-0ace6Qp7.png 1x, /simple-chocolate/assets/chocolate-mob@2x-min-BHpOKDUj.png 2x"
+              type="image/png"
+            />
+            <img
+              class="taste-card-image"
+              src="/simple-chocolate/assets/chocolate-mob-min-0ace6Qp7.png"
+              alt="milk chocolate"
+            />
+          </picture>
+          <p class="taste-card-text">mILK CHOCOLATE</p>
+        </div>
 
-        <div class="taste-card-overlay">
+        <div class="overlay-content">
           <h3 class="sub-heading">Milk chocolate</h3>
-          <div class="taste-card-overlay-tags">
+          <div class="overlay-tags">
             <span class="tag-accent">chocolate</span>
             <span class="tag-transparent">the benefits</span>
           </div>
-          <p class="taste-card-overlay-text">
+          <p class="overlay-text">
             Milk chocolate is a solid chocolate confectionery containing cocoa,
             sugar and milk. It is the most consumed type of chocolate. Chocolate
             was originally sold and consumed as a beverage in pre-Columbian
@@ -225,31 +227,33 @@
       </li>
 
       <li class="taste-card-item">
-        <picture class="taste-card-picture">
-          <source
-            srcset="/simple-chocolate/assets/milk-desk-min-D-Ov-NEV.png 1x, /simple-chocolate/assets/milk-desk@2x-min-6luVIPW3.png 2x"
-            media="(min-width: 1200px)"
-            type="image/png"
-          />
-          <source
-            srcset="/simple-chocolate/assets/milk-mob-min-CgS9DcCG.png 1x, /simple-chocolate/assets/milk-mob@2x-min-B0sl5L4_.png 2x"
-            type="image/png"
-          />
-          <img
-            class="taste-card-image"
-            src="/simple-chocolate/assets/milk-mob-min-CgS9DcCG.png"
-            alt="milk"
-          />
-        </picture>
-        <p class="taste-card-text">Milk</p>
+        <div class="overlay">
+          <picture class="taste-card-picture">
+            <source
+              srcset="/simple-chocolate/assets/milk-desk-min-D-Ov-NEV.png 1x, /simple-chocolate/assets/milk-desk@2x-min-6luVIPW3.png 2x"
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="/simple-chocolate/assets/milk-mob-min-CgS9DcCG.png 1x, /simple-chocolate/assets/milk-mob@2x-min-B0sl5L4_.png 2x"
+              type="image/png"
+            />
+            <img
+              class="taste-card-image"
+              src="/simple-chocolate/assets/milk-mob-min-CgS9DcCG.png"
+              alt="milk"
+            />
+          </picture>
+          <p class="taste-card-text">Milk</p>
+        </div>
 
-        <div class="taste-card-overlay">
+        <div class="overlay-content">
           <h3 class="sub-heading">Milk</h3>
-          <div class="taste-card-overlay-tags">
+          <div class="overlay-tags">
             <span class="tag-accent">milk</span>
             <span class="tag-transparent">the benefits</span>
           </div>
-          <p class="taste-card-overlay-text">
+          <p class="overlay-text">
             Milk is a white liquid food produced by the mammary glands of
             mammals. It is the primary source of nutrition for young mammals
             (including breastfed human infants) before they are able to digest
@@ -260,30 +264,32 @@
       </li>
 
       <li class="taste-card-item">
-        <picture class="taste-card-picture">
-          <source
-            srcset="/simple-chocolate/assets/nuts-desk-min-BPmJlnRb.png 1x, /simple-chocolate/assets/nuts-desk@2x-min-3W1csbPF.png 2x"
-            media="(min-width: 1200px)"
-            type="image/png"
-          />
-          <source
-            srcset="/simple-chocolate/assets/nuts-mob-min-dxEg-_vS.png 1x, /simple-chocolate/assets/nuts-mob@2x-min-D3bcP_uK.png 2x"
-          />
-          <img
-            class="taste-card-image"
-            src="/simple-chocolate/assets/nuts-mob-min-dxEg-_vS.png"
-            alt="nuts"
-          />
-        </picture>
-        <p class="taste-card-text">nuts</p>
+        <div class="overlay">
+          <picture class="taste-card-picture">
+            <source
+              srcset="/simple-chocolate/assets/nuts-desk-min-BPmJlnRb.png 1x, /simple-chocolate/assets/nuts-desk@2x-min-3W1csbPF.png 2x"
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="/simple-chocolate/assets/nuts-mob-min-dxEg-_vS.png 1x, /simple-chocolate/assets/nuts-mob@2x-min-D3bcP_uK.png 2x"
+            />
+            <img
+              class="taste-card-image"
+              src="/simple-chocolate/assets/nuts-mob-min-dxEg-_vS.png"
+              alt="nuts"
+            />
+          </picture>
+          <p class="taste-card-text">nuts</p>
+        </div>
 
-        <div class="taste-card-overlay">
+        <div class="overlay-content">
           <h3 class="sub-heading">Nuts</h3>
-          <div class="taste-card-overlay-tags">
+          <div class="overlay-tags">
             <span class="tag-accent">nuts</span>
             <span class="tag-transparent">the benefits</span>
           </div>
-          <p class="taste-card-overlay-text">
+          <p class="overlay-text">
             Almonds, pistachios, and walnuts are some types of nuts that contain
             healthy nutrients. When eaten as part of a nutrient-dense diet,
             these 9 nuts may offer benefits such as reducing your risk of heart
@@ -294,6 +300,7 @@
       </li>
 
       <li class="taste-card-item">
+        <div class="overlay"></div>
         <picture class="taste-card-picture">
           <source
             srcset="/simple-chocolate/assets/beans-desk-min-0q4CQIhr.png 1x, /simple-chocolate/assets/beans-desk@2x-min-8Dk_64zE.png 2x"
@@ -312,13 +319,13 @@
         </picture>
         <p class="taste-card-text">sEMI - SWEET CHOCOLATE</p>
 
-        <div class="taste-card-overlay">
+        <div class="overlay-content">
           <h3 class="sub-heading">semi - sweet chocolate</h3>
-          <div class="taste-card-overlay-tags">
+          <div class="overlay-tags">
             <span class="tag-accent">sweet chocolate</span>
             <span class="tag-transparent">the benefits</span>
           </div>
-          <p class="taste-card-overlay-text">
+          <p class="overlay-text">
             Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of
             the best ways to gain an understanding of this type of chocolate is
             to compare it to a different type of chocolate. Semisweet is darker
@@ -354,7 +361,7 @@
           type="image/png"
         />
         <img
-          сlass="made-image"
+          class="made-image"
           src="/simple-chocolate/assets/made-mob-min-Dqq5KJaK.png"
           alt="A hand holds a whisk dripping melted chocolate into a metal bowl covered with a gray cloth"
         />
