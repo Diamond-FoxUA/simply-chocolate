@@ -2,10 +2,6 @@
   padding: 30px 0;
 }
 
-/* .feedbacks .section-heading {
-  margin-bottom: 74px;
-} */
-
 .feedbacks-profile-pic {
   position: absolute;
   top: -40%;
@@ -86,6 +82,7 @@
   border-radius: 100%;
   background-color: rgba(17, 17, 17, 0.1);
 
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     width 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,6 +92,8 @@
   background-color: var(--orange);
   width: 28px;
   border-radius: 1em;
+
+  cursor: auto;
 }
 
 .btn-review {
