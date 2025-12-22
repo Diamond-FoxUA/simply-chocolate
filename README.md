@@ -1,109 +1,57 @@
-# 🍫 Simple Chocolate Project  
+# 🍫 Simple Chocolate
 
-Created by **Diamond-FoxUA** as part of a personal front-end project inspired by GoIT methodology.  
-
----
-
-## ⚙️ Technical Overview  
-
-**Simple Chocolate** — a responsive multi-section landing page created using **HTML5, CSS3, and JavaScript**, bundled with **Vite** and deployed via **GitHub Pages**.  
-The project demonstrates clean structure, modular code organization, and basic interactivity for an e-commerce-style layout.  
+**Responsive landing page** showcasing chocolate products and brand identity — built for practice and portfolio.
 
 ---
 
-## 📋 General Requirements  
+## 🚀 Live Demo
 
-- ✅ Semantic and valid HTML markup  
-- ✅ Connected modern CSS reset and normalization  
-- ✅ CSS variables for consistent theming  
-- ✅ **Mobile-first** responsive layout with breakpoints:  
-  - `375px+` — mobile version  
-  - `768px+` — tablet version  
-  - `1200px+` — desktop version  
-- ✅ Layout built using **Flexbox** 
-- ✅ **JavaScript** adds interactivity (modals, buttons, toast messages)  
-- ✅ Integrated **IziToast** library for user notifications  
+👉 https://diamond-foxua.github.io/simple-chocolate/
 
 ---
 
-## 🧩 Page Structure  
+## 📌 About the Project
 
-| Section | Description |
-|----------|-------------|
-| **Header** | Logo, navigation |
-| **Hero** | Main banner with product image and call-to-action button |
-| **Benefits** | Highlights of chocolate quality and ingredients |
-| **Taste** | Product ingradient catalog with overlays |
-| **Made** | Receipt of this brand's chocolate |
-| **Feedbacks** | User feedback section with testimonials |
-| **Subscription Form** | Email subscription form with success notification |
-| **Modal Windows** | JS-driven modals for sharing customer's feedback |
-| **Footer** | Navigation, social links, copyright info  and short subscription form |
+Simple Chocolate is a multi-section landing page built with modern web fundamentals.  
+It features a responsive layout, modular structure, and smooth interactivity powered by JavaScript.
+
+This project was created as part of personal frontend practice to demonstrate proficiency in HTML, CSS, and Vanilla JavaScript.
 
 ---
 
-## 💡 JavaScript Functionality  
+## 🧩 Key Features
 
-- ⚙️ Initialization of **IziToast** for notifications  
-- 🪟 Modal and mobile menu open/close logic via JS and event listeners  
-- 🖱 Smooth scroll navigation to sections  
-- 🧩 Event handling for buttons  
-- 💬 Toast alerts for successful actions  
-
----
-
-## 🌐 Project Description  
-
-**Simple Chocolate** — a sleek, minimal landing page designed to present chocolate products and brand identity.  
-
-Users can:  
-🍫 Explore product features and ingredients  
-💬 Read user reviews  
-📧 Subscribe for updates  
-🛒 View available products and details  
-🎨 Enjoy a smooth, responsive experience on all devices  
+✔️ Responsive design (mobile/tablet/desktop)  
+✔️ Smooth scrolling navigation  
+✔️ Modal windows for interactive elements  
+✔️ Toast notifications (via IziToast)  
+✔️ Built with Vite and deployed on GitHub Pages
 
 ---
 
-## 🛠️ Technologies Used  
+## 🛠️ Technologies Used
 
-| Category | Tools / Technologies |
-|-----------|----------------------|
-| Markup | **HTML5** |
-| Styling | **CSS3 (Flexbox)** |
-| Scripting | **JavaScript (ES6)** |
-| Build Tool | **Vite** |
-| Notifications | **IziToast** |
-| Version Control | **Git / GitHub** |
-| Deployment | **GitHub Pages** |
+- **HTML5** — semantic and accessible markup  
+- **CSS3** — Flexbox layout and responsive styling  
+- **JavaScript (ES6+)** — DOM interactions and UI logic  
+- **Vite** — development tooling  
+- **GitHub Pages** — deployment
 
 ---
 
-## 📐 Additional Details  
+## 📁 How to Run Locally
 
-- 🧱 Design created with focus on clarity and responsiveness  
-- 💻 Responsive testing through **Chrome DevTools**  
-- ✅ Validation via **W3C HTML/CSS Validator**  
-- 🖼️ Image optimization using **Squoosh**  
-- 🚀 Deployment automated via **Vite build → GitHub Pages**  
+If you want to view or modify the project locally:
 
----
+```bash
+# clone the repo
+git clone https://github.com/Diamond-FoxUA/simple-chocolate.git
 
-## 🔗 Live Demo  
+# enter folder
+cd simple-chocolate
 
-🌍 **[Visit Simple Chocolate Website](https://diamond-foxua.github.io/simple-chocolate/)**  
-📂 **[View Repository](https://github.com/Diamond-FoxUA/simple-chocolate)**  
+# install dependencies
+npm install
 
----
-
-## 🧾 License  
-
-This project is licensed under the **MIT License** — feel free to use and modify it for educational or personal purposes.  
-
----
-
-### 👨‍💻 Author  
-
-**Dmytro Farbun**  
-FullStack Developer • Passionate about creating clean, efficient, and user-friendly web applications. 
-[GitHub Profile → @Diamond-FoxUA](https://github.com/Diamond-FoxUA)  
+# start dev server
+npm run dev
