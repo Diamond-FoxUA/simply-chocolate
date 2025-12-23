@@ -1,4 +1,4 @@
-# 🍫 Simple Chocolate
+# 🍫 Simply Chocolate
 
 **Responsive landing page** showcasing chocolate products and brand identity — built for practice and portfolio.
 
@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-👉 https://diamond-foxua.github.io/simple-chocolate/
+👉 https://diamond-foxua.github.io/simply-chocolate/
 
 ---
 
